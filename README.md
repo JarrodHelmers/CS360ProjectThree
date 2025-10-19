@@ -1,4 +1,4 @@
-# 📱 Weight Tracker App - CS 360 Project Three Submission
+# 📱 Weight Tracker App
 
 ## 📌 Project Overview
 The **Weight Tracker** app allows users to **log and track their weight** over time. It features **secure authentication**, **persistent SQLite database storage**, and an intuitive **user-friendly UI**. Optional **SMS notifications** remind users to log their weight.
