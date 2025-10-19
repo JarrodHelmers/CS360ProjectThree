@@ -1,37 +1,40 @@
 package com.example.weight_trackerapp
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import androidx.core.app.NotificationChannelCompat
+import androidx.core.app.NotificationManagerCompat.IMPORTANCE_DEFAULT
 
+/**
+ * Receives the daily alarm and posts a simple notification.
+ */
 class ReminderReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent?) {
-        val channelId = "weight_reminders"
+        ensureNotificationChannel(context)
 
-        // Create channel on Android 8.0+
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                channelId,
-                "Weight Reminders",
-                NotificationManager.IMPORTANCE_DEFAULT
-            )
-            val mgr = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            mgr.createNotificationChannel(channel)
-        }
-
-        // Build and show the notification
-        val notif = NotificationCompat.Builder(context, channelId)
-            .setSmallIcon(android.R.drawable.ic_menu_info_details)
-            .setContentTitle("Log your weight")
-            .setContentText("Quick reminder to record today’s weight.")
+        val notification = NotificationCompat.Builder(context, CHANNEL_ID)
+            .setSmallIcon(android.R.drawable.ic_popup_reminder)
+            .setContentTitle("Weight reminder")
+            .setContentText("Don’t forget to log your weight today.")
             .setAutoCancel(true)
             .build()
 
-        NotificationManagerCompat.from(context).notify(1001, notif)
+        NotificationManagerCompat.from(context).notify(2001, notification)
+    }
+
+    companion object {
+        private const val CHANNEL_ID = "weight_reminders"
+
+        fun ensureNotificationChannel(context: Context) {
+            val mgr = NotificationManagerCompat.from(context)
+            val channel = NotificationChannelCompat.Builder(CHANNEL_ID, IMPORTANCE_DEFAULT)
+                .setName("Weight Reminders")
+                .setDescription("Daily reminder to log your weight")
+                .build()
+            mgr.createNotificationChannel(channel)
+        }
     }
 }
