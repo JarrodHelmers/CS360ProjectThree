@@ -1,32 +1,37 @@
 # 📱 Weight Tracker App
 
-## 📌 Project Overview
-The **Weight Tracker** app allows users to **log and track their weight** over time. It features **secure authentication**, **persistent SQLite database storage**, and an intuitive **user-friendly UI**. Optional **SMS notifications** remind users to log their weight.
+## 📌 Overview
+The **Weight Tracker App** is a simple and intuitive Android app that helps users record and monitor their weight over time.  
+It’s built using **Kotlin** and **Jetpack Compose**, with a focus on clean design, smooth performance, and local data security.  
+Users can set a 4-digit PIN to protect their data, log daily weight entries, and even get gentle reminders to stay consistent.
 
-## ✨ Key Features
-- **🔑 User Authentication** – Secure login and registration system.
-- **📊 Weight Logging** – Add, update, and delete weight entries.
-- **🗃 Persistent Storage** – Uses **SQLite** to retain user data.
-- **📩 SMS Notifications** – Sends reminders if permissions are granted.
+---
 
-## ⚙ Development Approach
-- **Modular Design** – Separated concerns across activities and database management.
-- **Data-Driven Architecture** – Ensured efficient data handling and retrieval.
-- **Comprehensive Testing** – Used **Android Emulator** and **physical devices** to validate app performance.
+## ✨ Features
+- 🔐 **Secure PIN Login:** Protects access to the app with a custom 4-digit PIN.  
+- ⚖️ **Daily Weight Tracking:** Add, edit, and delete entries to stay on top of your progress.  
+- 📊 **Stats at a Glance:** See your recent trends and average weight easily.  
+- 💾 **Offline Storage:** Uses **Room (SQLite)** to save your data directly on your device.  
+- 🔔 **Daily Notifications:** Optional reminders help keep you consistent with your logging routine.  
+- 🔄 **Unit Toggle:** Switch between pounds and kilograms anytime.
+
+---
+
+## ⚙️ Development Details
+This project follows a modular and clean architecture, separating the UI, logic, and data layers.  
+I used **Kotlin Flow** to handle real-time updates in the interface and kept the design responsive and easy to navigate.  
+Testing was done on both physical Android devices and the emulator to make sure everything ran smoothly.
+
+---
 
 ## 🚧 Challenges & Solutions
-- **🛠 Database Integration** – Implemented **SQLite** for reliable and secure data storage.
-- **🔐 Android Permissions** – Managed SMS permissions while ensuring the app continues functioning if denied.
+- 🧱 **Data Persistence:** Originally, data was stored in memory, but I migrated to a full **Room Database** for reliability.  
+- 🔐 **Permission Handling:** I added logic to handle notification permissions gracefully, so the app works even if they’re denied.  
+- ⚖️ **Unit Conversion:** Implemented a clean toggle system between **lbs** and **kg** without affecting stored data accuracy.
 
-## 🎯 Success & Learnings
-- Successfully built a **fully functional, user-centered mobile app**.
-- Gained experience in **authentication, database management, and Android development best practices**.
+---
 
-## 📂 Repository Contents
-- 📁 **App Code ZIP File** – Complete **Android Studio project**.
-- 📄 **App Launch Plan (Optional)**.
-
-## 🚀 Installation & Setup
-1. **Clone the repository**:  
-   ```sh
-   git clone [REPO_LINK]
+## 🎯 What I Learned
+This project taught me a lot about **Android development best practices**, from secure local storage to responsive UI design.  
+I became more confident using **Jetpack Compose**, **Room**, and **DataStore**, and learned how to combine functionality with a smooth user experience.  
+Most importantly, I learned how to think like a user — building something simple, reliable, and genuinely useful.
