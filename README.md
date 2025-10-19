@@ -40,9 +40,6 @@ Most importantly, I learned how to think like a user — building something simp
 
 ## Professional Self-Assessment
 Completing the Computer Science program at Southern New Hampshire University has greatly improved my technical skills and career outlook. My ePortfolio highlights my journey from basic programming to advanced software engineering projects, showing my ability to design, build, and secure computing solutions.
-
-During the program, I built teamwork and communication skills and focused on problem-solving in fast-paced environments. Courses like CS 260: Data Structures and Algorithms taught me about computing efficiency, and CS 360: Mobile Architecture and Programming improved my software design skills. DAD 220: Introduction to SQL and my work on the Room Database helped me learn data management and security, leading to my Weight Tracker App.
-
-My ePortfolio displays a variety of skills: a software engineering project that shows user-friendly applications, an algorithms and data structures project that emphasizes efficient solutions, and a database project focused on secure data storage. Together, these projects reflect my technical abilities and professionalism.
-
+During the program, I built teamwork and communication skills and focused on problem-solving in fast-paced environments. Courses like CS 260: Data Structures and Algorithms taught me how to understand computing efficiency. CS 360: Mobile Architecture and Programming helped me improve my software design skills. DAD 220: Introduction to SQL and my work on the Room Database taught me about data management and security. This knowledge led to the creation of my Weight Tracker App.
+My ePortfolio showcases a variety of skills through several projects. It includes a software engineering project that demonstrates the development of user-friendly applications, an algorithms and data structures project that emphasizes efficient solutions, and a database project focused on secure data storage. Together, these projects reflect my technical abilities and professionalism.
 This program has prepared me to keep growing in cybersecurity and software development while strengthening my problem-solving and communication skills. The skills and experiences in my ePortfolio demonstrate my dedication to creating secure, innovative, and user-centered technology solutions.
